@@ -1,0 +1,282 @@
+ * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 微軟正黑體;
+  /* color:gray  !important */
+}
+body,
+html{
+  position: relative;
+  height: 100%;  
+}
+a {
+  color: transparent;
+  transition:0.2s;
+}
+a:hover{
+  color:royalblue;
+  font-size: 20px;
+}
+
+.extra1{
+  width: 90%;
+  height: 200%;
+  background: black;
+  position: absolute;
+  z-index:-2;
+  top: 0;
+  mix-blend-mode: multiply;
+  display: none;
+  transition: 1s;
+  
+}
+
+.extra2{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background:white;
+  border: 1px black solid;
+  transform: translate(-50%,-50%);
+  z-index:-1;
+  display: none;
+}
+
+.extra3{
+  transition: 1s;
+  width: 800px;
+  height: 100px;
+  background: linear-gradient(45deg ,rgb(129, 192, 28),rgb(15, 191, 204));
+  border: 1px solid black;
+  text-align: center;
+  margin: auto;
+  border-radius: 2rem;
+  color: wheat !important;
+  text-shadow: 0.5rem 0.5rem 0.5rem black;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.extra3 :last-child{
+  display: none;
+}
+.extra3:hover{
+  color:white;
+  background:rgb(177, 32, 32);
+  border:15px double black;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
+  cursor: pointer;
+  text-shadow: 0.5rem 0.5rem 0.5rem black;
+}
+.extra3:hover :last-child{
+  display: inline-block;
+}
+.extra3:hover :first-child{
+  display: none;
+}
+.extra4{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: rosybrown;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transition: 1s;
+  display: none;
+}
+.extra4:hover{
+  border-radius:1rem;
+  transform: rotate(360deg);
+}
+#page-wrapper{
+  mix-blend-mode: multiply;
+  display: none;
+  width: 90%;
+  background: url("./staff_vsl.jpg")no-repeat center center/cover
+}
+#zen-intro{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem;
+  padding-top: 0;
+}
+#banner{
+  color: transparent;
+  font-size: 50px;
+  width: 50%;
+  transition: 1s;
+
+}
+#banner:hover{
+  color:wheat;
+  text-shadow: 0.3rem 0.3rem 0.3rem black;
+}
+#zen-summary{
+  color: transparent;
+  width: 100%;
+  order:3;
+  font-size:15px;
+  transition: 1s;
+}
+#zen-summary:hover{
+  color:rgb(219, 216, 19);
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  
+}
+#zen-preamble{
+  color:transparent;
+  width: 50%;
+  order: 2;
+  margin-top: 2rem;
+  transition: 1s;
+}
+#zen-preamble:hover{
+  color:white;
+  text-shadow: 0.2rem 0.2rem 0.3rem black;
+}
+/* --------------------------- */
+#zen-supporting{
+  display: flex;
+  padding: 2rem;
+  flex-wrap: wrap;
+  height: 100%;
+}
+#zen-supporting h3 {
+  font-size: 40px;
+} 
+#zen-supporting::before{
+  content: '';
+  width: 50%;
+  height: 50%;
+  order:0;
+} 
+#zen-supporting::after{
+  content: '';
+  width: 50%;
+  height: 50%;
+  order:4;
+} 
+
+#zen-explanation{
+  width: 50%;
+  order: 1;
+  transition: 2s;
+  color: transparent;
+} 
+#zen-explanation:hover {
+  color:gainsboro;
+  background: rebeccapurple;
+  padding: 1rem;
+  box-shadow: 1rem 1rem 1rem black;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+} 
+#zen-participation{
+  width: 100%;
+  order: 3;
+  transition: 2s;
+  color: transparent;
+}
+#zen-participation:hover {
+  color:gainsboro;
+  background: rgb(182, 126, 5);
+  padding: 1rem;
+  box-shadow: 1rem 1rem 1rem black;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+} 
+
+#zen-benefits{
+  width: 50%;
+  order: 5;
+  transition: 2s;
+  color: transparent;
+}
+#zen-benefits:hover {
+  color:gainsboro;
+  background: rgb(6, 110, 3);
+  padding: 1rem;
+  box-shadow: 1rem 1rem 1rem black;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+} 
+
+#zen-requirements{
+  width: 100%;
+  order:7;
+  transition: 2s;
+  color: transparent;
+}
+#zen-requirements:hover {
+  color:gainsboro;
+  background: rgb(21, 8, 133);
+  padding: 1rem;
+  box-shadow: 1rem 1rem 1rem black;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+} 
+#footer{
+  margin-top: 2rem;
+  order: 11;
+  width: 100%;
+  text-align: center;
+  transition: 2s;
+  margin-bottom: 15rem;
+}
+#footer a{
+  font-size: 50px;
+}
+#footer:hover {
+  width: 100%;
+  padding: 3rem;
+  height: 30%;
+  color:gainsboro;
+  background: rgb(148, 4, 124);
+  letter-spacing: 2rem;
+  padding: 1rem;
+  box-shadow: 1rem 1rem 1rem black;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+  font-size: 40px;
+}
+
+#sidebar{
+background: black;
+width: 10%;
+position: fixed;
+right: 0;
+top: 0;
+height: 100%;
+transition: 1s;
+color: transparent;
+display: flex;
+}
+#sidebar li {
+  margin-top:1.1rem;
+}#sidebar h3 {
+  margin-top:1.3rem;
+}
+#sidebar:hover{
+  background: rgba(5, 130, 179, 0.5);
+  box-shadow: -0.3rem -0.3rem 0.3rem black;
+  color: rgb(10, 238, 124);
+  padding: 0.5rem;
+  text-shadow: 0.05rem 0.05rem 0.1rem black;
+}
+#sidebar:hover a {
+  color: rgb(19, 101, 223);
+  text-shadow: 0.05rem 0.05rem 0.05rem black;
+}
+#sidebar a:hover{
+  color: rgb(46, 34, 155);
+  text-shadow: 0.5rem 0.5rem 1rem black;
+}
